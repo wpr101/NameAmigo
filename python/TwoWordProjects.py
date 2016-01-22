@@ -1,5 +1,5 @@
 import random
-import ReadText as rt
+from util import ReadText as rt
 
 def createNames():
     words = rt.readText('../txt/words.txt')

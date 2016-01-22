@@ -1,4 +1,9 @@
 Strong
+Sense
+Cool
+Divine
+Groovy
+Neat
 Albe
 Big
 Energy
@@ -26,7 +31,6 @@ Race
 Snap
 Wing
 Streak
-Fime
 Chop
 Jiffy
 Split
@@ -115,7 +119,7 @@ Technology
 Age
 Machine
 Global
-International
+Inter
 Imagine
 Infinity
 Kosmos
@@ -167,7 +171,7 @@ Lush
 National
 Entrusted
 Heaven
-Industries
+Industry
 Networks
 Skill
 Skills
@@ -177,6 +181,8 @@ Pep
 Pied
 Piper
 Sierra
+Frost
+Snow
 Mountain
 Nothing
 Question

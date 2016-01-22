@@ -1,4 +1,4 @@
-import ReadText as rt
+from util import ReadText as rt
 
 words = rt.readText('../txt/words.txt')
 
