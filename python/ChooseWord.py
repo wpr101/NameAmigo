@@ -17,8 +17,6 @@ t.update({'Fast':['Fast', 'Agile', 'Brisk', 'Hot', 'Quick',
                   'Split', 'Bat', 'Crazy', 'Double', 'Scream',
                   'Sonic', 'Super', 'Ball', 'Speed']})
 
-
-
 def createThesaurusName():
     print('Type word from list which describes your project:')
     print('Strong')
