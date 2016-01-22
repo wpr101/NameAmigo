@@ -1,1 +1,1 @@
-from python import readText
+from .. import readText
