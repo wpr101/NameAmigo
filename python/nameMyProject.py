@@ -3,6 +3,7 @@ import TwoWordProjects
 import ChooseWord
 
 def nameMyProject():
+    print("")
     print("Choose an option")
     print("1) One Word Project Names")
     print("2) Two Word Project Names")

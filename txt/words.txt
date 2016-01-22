@@ -1,13 +1,9 @@
 Strong
 Albe
-Active
 Big
 Energy
 Firm
-Force
-Heavy
 Robust
-Secure
 Solid
 Stable
 Steady
@@ -15,11 +11,9 @@ Tough
 Vigor
 Might
 Rugged
-Sound
 Fast
 Agile
 Brisk
-Hot
 Quick
 Rapid
 Swift
@@ -40,9 +34,7 @@ Bat
 Crazy
 Double
 Scream
-Sonic
 Ball
-Speed
 Kit
 Y
 X
@@ -60,7 +52,6 @@ Liquid
 Team
 Build
 Project
-Rank
 Factor
 Sales
 Force
@@ -79,7 +70,6 @@ Sport
 Son
 Geo
 Face
-Book
 Air
 Seven
 Five
@@ -117,7 +107,6 @@ Critical
 Web
 Service
 Block
-Chain
 High
 Low
 Computer
@@ -135,7 +124,7 @@ Info
 Sys
 Search
 Engine
-Device
+Dev
 Payment
 Noise
 Film
@@ -160,7 +149,6 @@ God
 Zues
 Roman
 Rome
-Group
 Play
 Together
 Create
@@ -240,7 +228,6 @@ Holdings
 Group
 Transport
 Speed
-Power
 Endurance
 Weight
 Lift
@@ -318,7 +305,6 @@ Rolls
 Latin
 Greek
 Flows
-Flow
 Region
 Chain
 Memory
@@ -399,7 +385,6 @@ Home
 Credit
 Away
 Prime
-Gift
 Tablet
 Data
 Base
@@ -411,7 +396,7 @@ Way
 Right
 Left
 Teach
-Self
+You
 Your
 Edition
 Scale
