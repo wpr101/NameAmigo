@@ -37,5 +37,4 @@ def createThesaurusName():
             projectName = thesaurusWord + genericWord
         print(projectName)
 
-createThesaurusName()
 
