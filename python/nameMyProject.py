@@ -1,16 +1,20 @@
-import oneWordProjects
-import twoWordProjects
-import chooseWord
+import OneWordProjects
+import TwoWordProjects
+import ChooseWord
 
-print("Choose an option")
-print("1) One Word Project Names")
-print("2) Two Word Project Names")
-print("3) Choose Word Describing Project")
+def nameMyProject():
+    print("Choose an option")
+    print("1) One Word Project Names")
+    print("2) Two Word Project Names")
+    print("3) Choose Word Describing Project")
 
-choice = int(input())
-if (choice == 1):
-    oneWordProjects.createNamesWithMeanings()
-elif (choice == 2):
-    twoWordProjects.createNames()
-elif (choice == 3):
-    chooseWord.createThesaurusName()
+    choice = int(input())
+    if (choice == 1):
+        OneWordProjects.createNamesWithMeanings()
+    elif (choice == 2):
+        TwoWordProjects.createNames()
+    elif (choice == 3):
+        ChooseWord.createThesaurusName()
+
+while(True):
+    nameMyProject()

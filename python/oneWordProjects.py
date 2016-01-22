@@ -1,5 +1,5 @@
 import random
-import readText as rt
+import ReadText as rt
 
 NUM_NAMES = 100
 
