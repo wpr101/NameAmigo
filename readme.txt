@@ -1,3 +1,13 @@
+NameFast
+NameQuick
+NameAction
+NameRoom
+NameLion
+NameCraft
+GreatName
+FastName
+
+
 https://en.wikipedia.org/wiki/List_of_Greek_and_Latin_roots_in_English
 https://en.wiktionary.org/wiki/Category:Latin_suffix_forms
 
