@@ -5,17 +5,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    projectNames = twp.createNames()
-    stringNames = "<h1>Names For Your Project</h1>"
-    for i in range(len(projectNames)):
-        stringNames += "<h3>" + str(i+1) + ") " + projectNames[i] + "</h3>"
+    project_names = twp.create_names()
+    string_names = "<h1>Names For Your Project</h1>"
+    for i in range(len(project_names)):
+        string_names += "<h3>" + str(i+1) + ") " + project_names[i] + "</h3>"
     
     #stringNames = '\n'.join(projectNames)
     #return 'Hello William!\n'
-    return stringNames
+    return string_names
 
 @app.route('/nameYourOwn')
-def nameYourOwn():
+def name_your_own():
     return "test"
 
 if __name__ == '__main__':

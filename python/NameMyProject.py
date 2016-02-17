@@ -2,7 +2,7 @@ import OneWordProjects
 import TwoWordProjects
 import ChooseWord
 
-def nameMyProject():
+def name_my_project():
     print("")
     print("Choose an option")
     print("1) One Word Project Names")
@@ -11,11 +11,11 @@ def nameMyProject():
 
     choice = int(input())
     if (choice == 1):
-        OneWordProjects.createNamesWithMeanings()
+        OneWordProjects.create_names_with_meanings()
     elif (choice == 2):
-        TwoWordProjects.createNames()
+        TwoWordProjects.create_names()
     elif (choice == 3):
-        ChooseWord.createThesaurusName()
+        ChooseWord.create_thesaurus_name()
 
 while(True):
-    nameMyProject()
+    name_my_project()

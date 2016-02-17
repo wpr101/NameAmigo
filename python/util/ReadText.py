@@ -1,21 +1,21 @@
-def readText(fileName):
-    with open(fileName) as f:
+def read_text(file_name):
+    with open(file_name) as f:
         lines = f.read().splitlines()
     f.close()
     return lines
 
 #Better to have a dictionary than double return?
-def readTextWithMeanings(fileName):
-    prefixWords = []
+def read_text_with_meanings(file_name):
+    prefix_words = []
     meanings = []
-    with open(fileName) as f:
+    with open(file_name) as f:
         lines = f.read().splitlines()
     f.close()
     for i in range(len(lines)):
         word, mean = lines[i].split()
-        prefixWords.append(word)
+        prefix_words.append(word)
         meanings.append(mean) 
-    return prefixWords, meanings
+    return prefix_words, meanings
 
 #TESTING 
 #prefixWords, meanings = readTextWithMeanings('../txt/readingRocketsPrefix.txt')

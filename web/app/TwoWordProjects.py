@@ -1,16 +1,16 @@
 import random
 import os
 
-def createNames():
-    words = readText('words.txt')
-    projectNames = []
-    for i in range(10):
-        projectName = random.choice(words) + random.choice(words)
-        projectNames.append(projectName)
-    return(projectNames)
+def create_names():
+    words = read_text('words.txt')
+    project_names = []
+    for i in range(100):
+        project_name = random.choice(words) + random.choice(words)
+        project_names.append(project_name)
+    return(project_names)
 
-def readText(fileName):
-    with open(fileName) as f:
+def read_text(file_name):
+    with open(file_name) as f:
         lines = f.read().splitlines()
     f.close()
     return lines

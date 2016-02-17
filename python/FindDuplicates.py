@@ -1,6 +1,6 @@
 from util import ReadText as rt
 
-words = rt.readText('../txt/words.txt')
+words = rt.read_text('../txt/words.txt')
 
 d = {}
 for i in range(len(words)):

@@ -1,6 +1,8 @@
 import random
-from util import ReadText as rt
 from random import randint
+
+from util import ReadText as rt
+
 
 t = {}
 t.update({'Strong':['Strong', 'Able', 'Active', 'Big',
@@ -17,22 +19,22 @@ t.update({'Fast':['Fast', 'Agile', 'Brisk', 'Hot', 'Quick',
                   'Split', 'Bat', 'Crazy', 'Double', 'Scream',
                   'Sonic', 'Super', 'Ball', 'Speed']})
 
-def createThesaurusName():
+def create_thesaurus_name():
     print('Type word from list which describes your project:')
     print('Strong')
     print('Fast')
-    userWord = input()
+    user_word = input()
     
-    words = rt.readText('../txt/words.txt')
+    words = rt.read_text('../txt/words.txt')
     for i in range(100):
-        projectName = ""
-        genericWord = random.choice(words)
-        thesaurusWord = random.choice(t[userWord])
+        project_name = ""
+        generic_word = random.choice(words)
+        thesaurus_word = random.choice(t[user_word])
         order = randint(0,1)
         if order == 0:
-            projectName = genericWord + thesaurusWord
+            project_name = generic_word + thesaurus_word
         elif order == 1:
-            projectName = thesaurusWord + genericWord
-        print(projectName)
+            project_name = thesaurus_word + generic_word
+        print(project_name)
 
 
