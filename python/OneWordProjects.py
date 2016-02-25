@@ -15,7 +15,7 @@ def create_names_with_meanings():
     suffixes, suf_meanings = rt.read_text_with_meanings('../txt/readingRocketsSuffix.txt')
     for i in range(NUM_NAMES):
         choice_pre = random.randint(0, len(prefixes)-1)
-        prefix = prefixes[choicePre]
+        prefix = prefixes[choice_pre]
         pre_meaning = pre_meanings[choice_pre]
 
         choice_suf = random.randint(0, len(suffixes)-1)

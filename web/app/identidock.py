@@ -16,7 +16,7 @@ def hello_world():
 
 @app.route('/nameYourOwn')
 def name_your_own():
-    return "test"
+    return "William"
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
