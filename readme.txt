@@ -1,3 +1,6 @@
+IDEAS:
+1) User answers questionaire, populating words with synonyms and possibly a business categorization
+
 NameFast
 NameQuick
 NameAction
