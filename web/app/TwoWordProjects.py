@@ -4,7 +4,7 @@ import os
 def create_names():
     words = read_text('words.txt')
     project_names = []
-    for i in range(1000):
+    for i in range(100):
         project_name = random.choice(words) + random.choice(words)
         project_names.append(project_name)
     return(project_names)

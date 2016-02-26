@@ -10,43 +10,53 @@
 </head>
 <body>
 
+<script>
+		function refresh() {
+			window.history.go(0);
+		}
+</script>
+
 <div class="container">
   <h2>Name My Project</h2>
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <!--<li class="active"><a data-toggle="pill" href="#home">Home</a></li>-->
     <li><a data-toggle="pill" href="#owp">One Word Projects</a></li>
     <li><a data-toggle="pill" href="#twp">Two Word Projects</a></li>
     <li><a data-toggle="pill" href="#wdp">Word Describing Project</a></li>
 	<li><a data-toggle="pill" href="#bt">Business Type</a></li>
+	<li><a data-toggle="pill" onclick="refresh()">Refresh</a></li>
   </ul>
   
   <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
+    <!--<div id="home" class="tab-pane fade in active">
       <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+      <p></p>
+    </div>-->
     <div id="owp" class="tab-pane fade">
       <h3>One Word Projects</h3>
       <p>
 		{% for name in one_word_names %}
-			<div class=flash>{{ name }}</div>
+			<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
 		{% endfor %}</p>
     </div>
     <div id="twp" class="tab-pane fade">
       <h3>Two Word Projects</h3>
       <p>
 	    {% for name in two_word_names %}
-			<div class=flash>{{ name }}</div>
+			<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
 		{% endfor %}
 	  </p>
     </div>
     <div id="wdp" class="tab-pane fade">
       <h3>Word Describing Project</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <p><A HREF="javascript:history.go(0)">Click to refresh the page</A></p>
     </div>
 	<div id="bt" class="tab-pane fade">
       <h3>Business Type</h3>
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+	<div id="r" class="tab-pane fade">
+	
     </div>
   </div>
 </div>

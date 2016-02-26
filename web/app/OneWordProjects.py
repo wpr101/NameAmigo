@@ -1,6 +1,6 @@
 import random
 
-NUM_NAMES = 1000
+NUM_NAMES = 100
 
 def create_names():
     prefix = read_text('prefix.txt')
@@ -13,7 +13,7 @@ def create_names_with_meanings():
     project_names = []
     prefixes, pre_meanings = read_text_with_meanings('readingRocketsPrefix.txt')
     suffixes, suf_meanings = read_text_with_meanings('readingRocketsSuffix.txt')
-    for i in range(NUM_NAMES-1):
+    for i in range(NUM_NAMES):
         choice_pre = random.randint(0, len(prefixes)-1)
         prefix = prefixes[choice_pre]
         pre_meaning = pre_meanings[choice_pre]
