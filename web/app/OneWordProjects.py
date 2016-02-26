@@ -1,6 +1,6 @@
 import random
 
-NUM_NAMES = 100
+NUM_NAMES = 25
 
 def create_names():
     prefix = read_text('prefix.txt')
