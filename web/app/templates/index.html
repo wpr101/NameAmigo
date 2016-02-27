@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Name My Project</title>
+  <title>Name Craft</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -17,52 +17,82 @@
 </script>
 
 <div class="container">
-  <h2>Name My Project</h2>
+  <h2>Name Craft</h2>
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-    <li><a data-toggle="pill" href="#owp">One Word Projects</a></li>
-    <li><a data-toggle="pill" href="#twp">Two Word Projects</a></li>
-    <li><a data-toggle="pill" href="#wdp">Word Describing Project</a></li>
-	<li><a data-toggle="pill" href="#bt">Business Type</a></li>
+    <li class="active"><a data-toggle="pill" href="#home">Random</a></li>
+    <!--<li><a data-toggle="pill" href="#owp">One Word Projects</a></li>-->
+    <!--<li><a data-toggle="pill" href="#twp">Random</a></li>-->
+    <li><a data-toggle="pill" href="#wdp">Describe</a></li>
+	<!--<li><a data-toggle="pill" href="#bt">Business</a></li>-->
 	<li><a data-toggle="pill" onclick="refresh()">Refresh</a></li>
   </ul>
   
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-      <h3>HOME</h3>
-      <p>This website is for creating names for your project or business</p>
+      <h3>Random Project Names</h3>
+	  
+	  {% for name in two_word_names %}
+			<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
+		{% endfor %}
     </div>
-    <div id="owp" class="tab-pane fade">
+    <!--<div id="owp" class="tab-pane fade">
       <h3>One Word Projects</h3>
       <p>
 		{% for name in one_word_names %}
 			<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
 		{% endfor %}</p>
-    </div>
-    <div id="twp" class="tab-pane fade">
-      <h3>Two Word Projects</h3>
+    </div>-->
+    <!--<div id="twp" class="tab-pane fade">
+      <h3>Random Names</h3>
       <p>
 	    {% for name in two_word_names %}
 			<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
 		{% endfor %}
 	  </p>
-    </div>
+    </div>-->
     <div id="wdp" class="tab-pane fade">
-      <h3>Word Describing Project</h3>
+      <h3>Click A Description</h3>
       <p>
-		
-		{% for name in describe_projects["Cute"] %}
-			<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
-		{% endfor %}
-		
+	  
+	    <ul class="nav nav-pills nav-stacked">
+			<li><a data-toggle="pill" href="#cute">Cute</a></li>
+			<li><a data-toggle="pill" href="#fast">Fast</a></li>
+			<li><a data-toggle="pill" href="#strong">Strong</a></li>
+		</ul>
 		
 	  </p>
     </div>
-	<div id="bt" class="tab-pane fade">
+	
+	<div id="cute" class="tab-pane fade">
+		<h3>Cute</h3>
+		<p>
+			{% for name in describe_projects["Cute"] %}
+				<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
+			{% endfor %}
+		</p>
+	</div>
+	<div id="fast" class="tab-pane fade">
+		<h3>Fast</h3>
+		<p>
+			{% for name in describe_projects["Fast"] %}
+				<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
+			{% endfor %}
+		</p>
+	</div>
+	<div id="strong" class="tab-pane fade">
+		<h3>Strong</h3>
+		<p>
+			{% for name in describe_projects["Strong"] %}
+				<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
+			{% endfor %}
+		</p>
+	</div>
+	
+	<!--<div id="bt" class="tab-pane fade">
       <h3>Business Type</h3>
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
-	<div id="r" class="tab-pane fade">
+	<div id="r" class="tab-pane fade">-->
 	
     </div>
   </div>

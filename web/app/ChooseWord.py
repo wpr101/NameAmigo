@@ -28,8 +28,8 @@ thesaurus.update({'Cute':['Cute', 'Kind', 'Nice', 'Happy', 'Great',
                   'Tickle', 'Peace', 'Cheer', 'Enjoy', 'Merry',
                   'Magic', 'Beauty', 'Glamour', 'Grace', 'Spell',
                   'Cozy', 'Comfy', 'Silk', 'Smooth', 'Cream',
-                  'Easy', 'Cushion', 'Fine', 'Furry', 'Snug'
-                  'Round', 'Emotion', 'Friend', 'Like', 'Style'
+                  'Easy', 'Cushion', 'Fine', 'Furry', 'Snug',
+                  'Round', 'Emotion', 'Friend', 'Like', 'Style',
                   'Ease', 'Elegant', 'Safe', 'Rest']})
 
 def create_thesaurus_name():
