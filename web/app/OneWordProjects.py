@@ -1,18 +1,20 @@
 import random
 
+import ReadText as rt
+
 NUM_NAMES = 25
 
 def create_names():
-    prefix = read_text('prefix.txt')
-    suffix = read_text('suffix.txt')
+    prefix = rt.read_text('txt/prefix.txt')
+    suffix = rt.read_text('txt/suffix.txt')
     for i in range(NUM_NAMES):
         name = random.choice(prefix) + random.choice(suffix)
         print(name)
 
 def create_names_with_meanings():
     project_names = []
-    prefixes, pre_meanings = read_text_with_meanings('readingRocketsPrefix.txt')
-    suffixes, suf_meanings = read_text_with_meanings('readingRocketsSuffix.txt')
+    prefixes, pre_meanings = rt.read_text_with_meanings('txt/readingRocketsPrefix.txt')
+    suffixes, suf_meanings = rt.read_text_with_meanings('txt/readingRocketsSuffix.txt')
     for i in range(NUM_NAMES):
         choice_pre = random.randint(0, len(prefixes)-1)
         prefix = prefixes[choice_pre]
@@ -27,23 +29,7 @@ def create_names_with_meanings():
         project_names.append(name)
     return(project_names)
 
-def read_text(file_name):
-    with open(file_name) as f:
-        lines = f.read().splitlines()
-    f.close()
-    return lines
 
-def read_text_with_meanings(file_name):
-    prefix_words = []
-    meanings = []
-    with open(file_name) as f:
-        lines = f.read().splitlines()
-    f.close()
-    for i in range(len(lines)):
-        word, mean = lines[i].split()
-        prefix_words.append(word)
-        meanings.append(mean) 
-    return prefix_words, meanings
 
 
 

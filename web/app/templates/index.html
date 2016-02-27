@@ -49,7 +49,14 @@
     </div>
     <div id="wdp" class="tab-pane fade">
       <h3>Word Describing Project</h3>
-      <p><A HREF="javascript:history.go(0)">Click to refresh the page</A></p>
+      <p>
+		
+		{% for name in describe_projects["Cute"] %}
+			<div class=flash>{{ loop.index }}{{ ". " + name }}</div>
+		{% endfor %}
+		
+		
+	  </p>
     </div>
 	<div id="bt" class="tab-pane fade">
       <h3>Business Type</h3>
