@@ -10,14 +10,40 @@ thesaurus.update({'Strong':['Strong', 'Able', 'Active', 'Big',
                     'Force', 'Heavy', 'Robust', 'Secure',
                     'Solid', 'Stable', 'Steady',
                     'Tough', 'Vigor', 'Might',
-                    'Rugged', 'Sound']})
+                    'Rugged', 'Sound', 'Ready', 'Alert',
+					'Power', 'Powerful', 'Worthy', 'Alive',
+					'Flow', 'Effect', 'Going', 'Mobile',
+					'Push', 'Roll', 'Rush', 'Huge',
+					'Full', 'Vast', 'Size', 'Crowd',
+					'Whopper', 'Monster', 'Spirit', 'Vital'
+					'Intense', 'Alpha', 'Drive', 'Life',
+					'Enterprise', 'Fire', 'Force', 'Go',
+					'Juice', 'Pep', 'Potent', 'Punch', 
+					'Kick', 'Zip', 'Zing', 'Zest', 'Zeal',
+					'Viva', 'Thick', 'Concrete', 'Set', 
+					'Hard', 'Effort', 'Violence', 'Arm',
+					'Draft', 'Impact', 'Pow', 'Potential',
+					'Steam', 'Stress', 'Tension', 'Booming',
+					'Hearty', 'Built', 'Fit', 'Lust', 'Wicked'
+					'Zippy', 'Snap', 'Roar'
+					]})
 
 thesaurus.update({'Fast':['Fast', 'Agile', 'Brisk', 'Hot', 'Quick',
                   'Rapid', 'Swift', 'Accel', 'Active',
                   'Dash', 'Flash', 'Fly', 'Race', 'Snap',
                   'Wing', 'Streak', 'Time', 'Chop', 'Jiffy',
                   'Split', 'Bat', 'Crazy', 'Double', 'Scream',
-                  'Sonic', 'Super', 'Ball', 'Speed']})
+                  'Sonic', 'Super', 'Ball', 'Speed', 'Haste',
+				  'Nimble', 'Winged', 'Pronto', 'Presto',
+				  'Energy', 'Lively', 'Sharp', 'Prompt',
+				  'Trigger', 'Zip', 'Zippy', 'Draw', 'Spry',
+				  'Alert', 'Busy', 'Animated', 'Red', 'Sizzle',
+				  'Scorch', 'Burn', 'Burning', 'Fever',
+				  'Fiery', 'Smoking', 'Tropic', 'Hurry',
+				  'Going', 'Head', 'Asap', 'Double', 'Triple',
+				  'Break', 'Express', 'Ready'
+				  
+				  ]})
 
 thesaurus.update({'Cute':['Cute', 'Kind', 'Nice', 'Happy', 'Great',
                   'Fun', 'Charm', 'Charming', 'Pretty',
@@ -30,11 +56,19 @@ thesaurus.update({'Cute':['Cute', 'Kind', 'Nice', 'Happy', 'Great',
                   'Cozy', 'Comfy', 'Silk', 'Smooth', 'Cream',
                   'Easy', 'Cushion', 'Fine', 'Furry', 'Snug',
                   'Round', 'Emotion', 'Friend', 'Like', 'Style',
-                  'Ease', 'Elegant', 'Safe', 'Rest']})
+                  'Ease', 'Elegant', 'Safe', 'Rest', 'Touch']})
 
 def create_thesaurus_name():
     describe_projects = {}
     words = rt.read_text('txt/words.txt')
+
+    #Add random as a thesaurus mapping
+    random_list = []
+    for i in range(25):
+        random_name = ""
+        random_name = random.choice(words) + random.choice(words)
+        random_list.append(random_name)
+    describe_projects.update({"Random":random_list})
 
     for entry in thesaurus:
         user_word = entry

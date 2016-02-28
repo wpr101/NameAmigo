@@ -8,10 +8,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     
-    two_word_names = twp.create_names()
+    #two_word_names = twp.create_names()
     describe_projects = cw.create_thesaurus_name()
 
-    return render_template('index.html', two_word_names = two_word_names,
+    return render_template('tabbedindex.html',
                            describe_projects = describe_projects)
 
 @app.route('/TwoWordProjects')
