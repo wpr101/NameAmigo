@@ -717,7 +717,6 @@ Fin
 Report
 Reports
 V
-U
 Type
 Gram
 Vita
@@ -726,7 +725,6 @@ Vitamins
 Kilo
 Typing
 Types
-Banks
 Flint
 Stones
 Asset
@@ -1879,7 +1877,6 @@ Sleeps
 Sleeping
 Sleep
 Powers
-Powerful
 Power
 Version
 Transform

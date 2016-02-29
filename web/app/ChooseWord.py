@@ -24,7 +24,7 @@ thesaurus.update({'Strong':['Strong', 'Able', 'Active', 'Big',
 					'Hard', 'Effort', 'Violence', 'Arm',
 					'Draft', 'Impact', 'Pow', 'Potential',
 					'Steam', 'Stress', 'Tension', 'Booming',
-					'Hearty', 'Built', 'Fit', 'Lust', 'Wicked'
+					'Hearty', 'Built', 'Fit', 'Lust', 'Wicked',
 					'Zippy', 'Snap', 'Roar'
 					]})
 
