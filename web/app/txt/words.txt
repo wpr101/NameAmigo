@@ -45,7 +45,6 @@ Pitching
 Honors
 Salad
 Salads
-Shame
 Bench
 Warden
 Prison
@@ -1398,7 +1397,7 @@ Yellow
 Ok
 Bro
 Okay
-Sex
+Sexy
 Plus
 Minus
 Smile
@@ -1729,7 +1728,7 @@ Back
 Backs
 Closes
 Violent
-Violenceg
+Violence
 Arm
 Effort
 Lose

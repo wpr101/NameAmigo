@@ -69,7 +69,7 @@ thesaurus.update({'Social':['Social', 'Post', 'App', 'Share', 'Like',
                             'Slice', 'Interest', 'Allied', 'Ally', 'Close',
                             'Same', 'Double', 'Twin', 'Near', 'Local',
                             'Buddy', 'Cousin', 'Partner', 'Class',
-                            'Pal', 'Mate', 'Kick', 'Side', 'Chum', 'Crony'
+                            'Pal', 'Mate', 'Kick', 'Side', 'Chum', 'Crony',
                             'Room', 'Uni', 'College', 'Universe', 'Info',
                             'Letter', 'Memo', 'News', 'Note', 'Notice',
                             'Report', 'Word', 'Dope', 'Paper', 'Wire',
@@ -95,7 +95,7 @@ thesaurus.update({'Social':['Social', 'Post', 'App', 'Share', 'Like',
                             'Jury', 'Town', 'Region', 'Border', 'Amigo',
                             'Sis', 'Bro', 'Cuz', 'Warn', 'Story', 'Cable',
                             'Rumor', 'Data', 'Expert', 'Umpire', 'Warden',
-                            'Bench', 'Honor', 'Shame', 'Toss', 'Fling',
+                            'Bench', 'Honor', 'Toss', 'Fling',
                             'Tind', 'Lob', 'Pitch', 'Line', 'Face', 'Book',
                             'Tape', 'Belt', 'Circle', 'Hoop', 'Rope', 'Stay',
                             'Strap', 'Cord', 'Join', 'Mutual', 'Urban',
@@ -103,6 +103,8 @@ thesaurus.update({'Social':['Social', 'Post', 'App', 'Share', 'Like',
                             'Wed', 'Touch', 'Look', 'Top', 'Clock', 'Smirk',
                             'Profile', 'Dial', 'Form', 'Sketch'
                           ]})
+
+thesaurus.update({'Home':['Home']})
 
 def create_thesaurus_name():
     ENTRIES = 25
