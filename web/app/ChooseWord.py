@@ -39,7 +39,7 @@ thesaurus.update({'Fast':['Fast', 'Agile', 'Brisk', 'Hot', 'Quick',
 				  'Trigger', 'Zip', 'Zippy', 'Draw', 'Spry',
 				  'Alert', 'Busy', 'Animated', 'Red', 'Sizzle',
 				  'Scorch', 'Burn', 'Burning', 'Fever',
-				  'Fiery', 'Smoking', 'Tropic', 'Hurry',
+				  'Fiery', 'Smoking', 'Hurry',
 				  'Going', 'Head', 'Asap', 'Double', 'Triple',
 				  'Break', 'Express', 'Ready'
 				  
@@ -58,13 +58,60 @@ thesaurus.update({'Cute':['Cute', 'Kind', 'Nice', 'Happy', 'Great',
                   'Round', 'Emotion', 'Friend', 'Like', 'Style',
                   'Ease', 'Elegant', 'Safe', 'Rest', 'Touch']})
 
+thesaurus.update({'Social':['Social', 'Post', 'App', 'Share', 'Like',
+                            'Friend', 'Message', 'Vote', 'Comment', 'Link',
+                            'Friends', 'Messages', 'Shares', 'Votes',
+                            'Viral', 'Photo', 'Video', 'Selfie', 'Status',
+                            'Group', 'Collect', 'Common', 'Community',
+                            'Nice', 'General', 'Panel', 'Play', 'Value',
+                            'Part', 'Stake', 'Bite', 'Lot', 'Piece',
+                            'Point', 'Points', 'Drag', 'Claim', 'Taste',
+                            'Slice', 'Interest', 'Allied', 'Ally', 'Close',
+                            'Same', 'Double', 'Twin', 'Near', 'Local',
+                            'Buddy', 'Cousin', 'Partner', 'Class',
+                            'Pal', 'Mate', 'Kick', 'Side', 'Chum', 'Crony'
+                            'Room', 'Uni', 'College', 'Universe', 'Info',
+                            'Letter', 'Memo', 'News', 'Note', 'Notice',
+                            'Report', 'Word', 'Dope', 'Paper', 'Wire',
+                            'Intel', 'Tally', 'Choice', 'Poll',
+                            'Refer', 'Wish', 'Yea', 'Aye', 'Nay', 'Remark',
+                            'Discuss', 'Judge', 'Buzz', 'Feed', 'Crack',
+                            'Gloss', 'Input', 'Review', 'Wise', 'Hear',
+                            'Network', 'Channel', 'Contact', 'Hookup',
+                            'Element', 'Knot', 'Tie', 'Bond', 'In', 'Link',
+                            'Linked', 'Attach', 'Relation', 'Joint', 'Nexus',
+                            'Loop', 'Ring', 'Energy', 'Thrive', 'Grow',
+                            'Growing', 'Picture', 'Image', 'Sketch', 'Shot',
+                            'Design', 'Figure', 'Plate', 'Tail', 'Paint',
+                            'Painting', 'Broad', 'Cast', 'Program', 'Tele',
+                            'TV', 'Other', 'Quality', 'Rating', 'Grade',
+                            'Mode', 'Stage', 'Footing', 'Degree', 'Body',
+                            'Band', 'Club', 'Gang', 'Troop', 'Crowd', 'Party',
+                            'Batch', 'Bunch', 'Lot', 'Crew', 'Trust', 'Set',
+                            'Combo', 'Combine', 'Save', 'Stamp', 'Heap',
+                            'Flock', 'Rally', 'Board', 'Nation', 'Colony',
+                            'Turf', 'Public', 'People', 'Herd', 'Mob',
+                            'Okay', 'Fair', 'Good', 'Swell', 'Forum',
+                            'Jury', 'Town', 'Region', 'Border', 'Amigo',
+                            'Sis', 'Bro', 'Cuz', 'Warn', 'Story', 'Cable',
+                            'Rumor', 'Data', 'Expert', 'Umpire', 'Warden',
+                            'Bench', 'Honor', 'Shame', 'Toss', 'Fling',
+                            'Tind', 'Lob', 'Pitch', 'Line', 'Face', 'Book',
+                            'Tape', 'Belt', 'Circle', 'Hoop', 'Rope', 'Stay',
+                            'Strap', 'Cord', 'Join', 'Mutual', 'Urban',
+                            'Free', 'Clip', 'Fuse', 'Fusion', 'Pair', 'Lock',
+                            'Wed', 'Touch', 'Look', 'Top', 'Clock', 'Smirk',
+                            'Profile', 'Dial', 'Form', 'Sketch'
+                          ]})
+
 def create_thesaurus_name():
+    ENTRIES = 25
     describe_projects = {}
     words = rt.read_text('txt/words.txt')
 
     #Add random as a thesaurus mapping
     random_list = []
-    for i in range(25):
+    for i in range(ENTRIES):
         random_name = ""
         random_name = random.choice(words) + random.choice(words)
         random_list.append(random_name)
@@ -73,7 +120,7 @@ def create_thesaurus_name():
     for entry in thesaurus:
         user_word = entry
         project_list = []
-        for i in range(25):
+        for i in range(ENTRIES):
             project_name = ""
             generic_word = random.choice(words)
             thesaurus_word = random.choice(thesaurus[user_word])
