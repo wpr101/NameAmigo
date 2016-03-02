@@ -15,8 +15,9 @@ def index():
 
 @app.route('/<string:user_word>')
 def CustomName(user_word):
-    
-    project_names = cn.custom_names(user_word)
+
+    word_list = user_word.split('-')
+    project_names = cn.custom_names(word_list)
     
     return render_template('customnames3.html',
                            project_names = project_names,
