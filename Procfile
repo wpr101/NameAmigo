@@ -1,1 +1,1 @@
-web: sh -c 'cd ./web/app && python ./web/app/NameCraft.py' 
+web: sh -c 'cd ./web/app && python NameCraft.py' 
