@@ -6,7 +6,7 @@ import ReadText as rt
 def custom_names(user_word):
     words = rt.read_text('txt/words.txt')
     project_names = []
-    for i in range(1000):
+    for i in range(25):
         order = randint(0,1)
         select_num = randint(0,len(user_word)-1)
         select_word = user_word[select_num]
