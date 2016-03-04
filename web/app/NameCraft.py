@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import os
 
 import ChooseWord as cw
 import CustomNames as cn
@@ -24,4 +25,6 @@ def CustomName(user_word):
                            user_word = user_word)
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=33507)
+    #app.run(debug=True, host='0.0.0.0', port=33507)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
