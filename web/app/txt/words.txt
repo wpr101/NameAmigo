@@ -6,6 +6,8 @@ Crescendo
 Niche
 Staff
 Subject
+Sunday
+Friday
 Donor
 Shake
 Tranquil
@@ -821,7 +823,6 @@ Hilly
 Flats
 Ladder
 Media
-Friday
 Monday
 Places
 Plenty
