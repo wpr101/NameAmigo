@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect
-import os
+import os, string
 
 import ChooseWord as cw
 import CustomNames as cn
@@ -27,7 +27,13 @@ def CustomName(user_word):
 @app.route('/CustomWords', methods=['GET'])
 def CustomWords():
 	user_word = request.args['words']
+	translator = str.maketrans({key: None for key in string.punctuation})
+	user_word = user_word.translate(translator)
+
 	word_list = user_word.split()
+	for i in range(len(word_list)):
+		word_list[i] = word_list[i].capitalize()
+		
 	redirect_string = '/'
 	for i in range(len(word_list)):
 		redirect_string += word_list[i] 
@@ -44,4 +50,4 @@ def CustomWords():
 if __name__ == '__main__':
     #app.run(debug=True, host='0.0.0.0', port=33507)
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(debug=True, host='0.0.0.0', port=port)
