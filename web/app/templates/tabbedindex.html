@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1>
   <title>Name Amigo</title>
   <!--COMMNENT: to not load a favicon-->
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script>
   $(function() {
     $( "#tabs" ).tabs();
@@ -16,14 +19,21 @@
   </script>
 </head>
 <body>
-<h1>Name Amigo</h1> 
+
+<div data-role="main" class="ui-content">
+    <form method="get" action="/CustomWords">
+      <label for="words">Enter Words About Your Project:</label>
+      <input type="text" name="words" id="words">
+      <input type="submit" value="Submit">
+    </form>
+</div>
 <div id="tabs">
   <ul>
     <li><a href="#tabs-1">Random</a></li>
-    <li><a href="#tabs-2">Cute</a></li>
-    <li><a href="#tabs-3">Fast</a></li>
-	<li><a href="#tabs-4">Strong</a></li>
-	<li><a href="#tabs-5">Social</a></li>
+    <li><a href="#tabs-2">Social</a></li>
+	<li><a href="#tabs-4">Cute</a></li>
+	<li><a href="#tabs-5">Strong</a></li>
+	<li><a href="#tabs-6">Fast</a></li>
   </ul>
   <div id="tabs-1">
     <p>
@@ -34,28 +44,28 @@
   </div>
   <div id="tabs-2">
     <p>  
-		{% for name in describe_projects["Cute"] %}
+		{% for name in describe_projects["Social"] %}
 			<div>{{ loop.index }}{{ ". " + name }}</div>
 		{% endfor %}
 	</p>
   </div>
-  <div id="tabs-3">
-      <p>
-		{% for name in describe_projects["Fast"] %}
-			<div>{{ loop.index }}{{ ". " + name }}</div>
-		{% endfor %}
-	  </p>
-  </div>
   <div id="tabs-4">
       <p>
-		{% for name in describe_projects["Strong"] %}
+		{% for name in describe_projects["Cute"] %}
 			<div>{{ loop.index }}{{ ". " + name }}</div>
 		{% endfor %}
 	  </p>
   </div>
   <div id="tabs-5">
       <p>
-		{% for name in describe_projects["Social"] %}
+		{% for name in describe_projects["Strong"] %}
+			<div>{{ loop.index }}{{ ". " + name }}</div>
+		{% endfor %}
+	  </p>
+  </div>
+  <div id="tabs-6">
+      <p>
+		{% for name in describe_projects["Fast"] %}
 			<div>{{ loop.index }}{{ ". " + name }}</div>
 		{% endfor %}
 	  </p>

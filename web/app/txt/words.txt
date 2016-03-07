@@ -1345,7 +1345,6 @@ Maps
 Map
 Mapping
 Card
-Weed
 Cache
 Hedge
 Cards
@@ -1893,10 +1892,6 @@ Ripe
 Draft
 Next
 Back
-Backs
-Closes
-Violent
-Violence
 Arm
 Effort
 Lose
