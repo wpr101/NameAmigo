@@ -15,7 +15,7 @@ thesaurus.update({'Strong':['Strong', 'Able', 'Active', 'Big',
 					'Flow', 'Effect', 'Going', 'Mobile',
 					'Push', 'Roll', 'Rush', 'Huge',
 					'Full', 'Vast', 'Size', 'Crowd',
-					'Whopper', 'Monster', 'Spirit', 'Vital'
+					'Whopper', 'Monster', 'Spirit', 'Vital',
 					'Intense', 'Alpha', 'Drive', 'Life',
 					'Enterprise', 'Fire', 'Force', 'Go',
 					'Juice', 'Pep', 'Potent', 'Punch', 
