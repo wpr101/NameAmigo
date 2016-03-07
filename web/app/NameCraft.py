@@ -29,6 +29,8 @@ def CustomWords():
 	user_word = request.args['words']
 	#translator = str.maketrans({key: None for key in string.punctuation})
 	#user_word = user_word.translate(translator)
+	punct = set(string.punctuation)
+	user_word = ''.join(x for x in user_word if x not in punct)
 
 	word_list = user_word.split()
 	for i in range(len(word_list)):
