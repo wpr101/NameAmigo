@@ -27,8 +27,8 @@ def CustomName(user_word):
 @app.route('/CustomWords', methods=['GET'])
 def CustomWords():
 	user_word = request.args['words']
-	translator = str.maketrans({key: None for key in string.punctuation})
-	user_word = user_word.translate(translator)
+	#translator = str.maketrans({key: None for key in string.punctuation})
+	#user_word = user_word.translate(translator)
 
 	word_list = user_word.split()
 	for i in range(len(word_list)):
