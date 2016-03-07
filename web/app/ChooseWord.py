@@ -107,7 +107,7 @@ thesaurus.update({'Social':['Social', 'Post', 'App', 'Share', 'Like',
 thesaurus.update({'Home':['Home']})
 
 def create_thesaurus_name():
-    ENTRIES = 25
+    ENTRIES = 100
     describe_projects = {}
     words = rt.read_text('txt/words.txt')
 
