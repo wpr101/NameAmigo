@@ -38,21 +38,20 @@ def CustomWords():
 	for i in range(len(word_list)):
 	    word_list[i] = word_list[i].capitalize()
 		
-    #remove duplicates from the list
+        #remove duplicates from the list
 	word_list = list(set(word_list))
 	
-	#stop = stopwords.words('english')
-	#for s in stop:
-		#for w in word_list:
-			#if (s.capitalize() == w):
-				#print("w is", w)
-				#word_list.remove(w)
+	stop = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', 'her', 'hers', 'herself', 'it', 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves', 'what', 'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does', 'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until', 'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', 'should', 'now', 'd', 'll', 'm', 'o', 're', 've', 'y', 'ain', 'aren', 'couldn', 'didn', 'doesn', 'hadn', 'hasn', 'haven', 'isn', 'ma', 'mightn', 'mustn', 'needn', 'shan', 'shouldn', 'wasn', 'weren', 'won', 'wouldn']
+	for s in stop:
+	    for w in word_list:
+                if (s.capitalize() == w):
+                    word_list.remove(w)
 	
 		
 	redirect_string = '/'
 	for i in range(len(word_list)):
-		redirect_string += word_list[i] 
-		redirect_string += "-"
+	    redirect_string += word_list[i] 
+	    redirect_string += "-"
 	#remove the trailing slash
 	redirect_string = redirect_string[:-1]
 	
