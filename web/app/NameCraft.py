@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import os, string
-import nltk
-from nltk.corpus import stopwords
+#import nltk
+#from nltk.corpus import stopwords
 
 import ChooseWord as cw
 import CustomNames as cn
@@ -41,12 +41,12 @@ def CustomWords():
     #remove duplicates from the list
 	word_list = list(set(word_list))
 	
-	stop = stopwords.words('english')
-	for s in stop:
-		for w in word_list:
-			if (s.capitalize() == w):
-				print("w is", w)
-				word_list.remove(w)
+	#stop = stopwords.words('english')
+	#for s in stop:
+		#for w in word_list:
+			#if (s.capitalize() == w):
+				#print("w is", w)
+				#word_list.remove(w)
 	
 		
 	redirect_string = '/'
