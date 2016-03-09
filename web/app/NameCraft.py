@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 import os
 
 import ChooseWord as cw
@@ -27,12 +27,16 @@ def CustomName(user_word):
 
 @app.route('/CustomWords', methods=['GET'])
 def CustomWords():
+    
     user_word = request.args['words']
-
+    
     word_list = pw.clean_words(user_word)
+    #if not word_list:
+        #return redirect(url_for('index'))
+        
     redirect_string = pw.create_redirect_string(word_list)
 	
-    return redirect(redirect_string)
+    return redirect (redirect_string)
 	
 if __name__ == '__main__':
     #app.run(debug=True, host='0.0.0.0', port=33507)
