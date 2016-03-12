@@ -1654,9 +1654,7 @@ Veri
 Fuel
 Gas
 Heap
-Heaps
 Vanilla
-Rum
 Nova
 Quark
 Earth
