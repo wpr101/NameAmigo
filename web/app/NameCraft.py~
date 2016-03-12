@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, Response
+from flask import Flask, render_template, request, redirect, url_for
 import os
 
 import ChooseWord as cw
@@ -38,10 +38,10 @@ def CustomWords():
 	
     return redirect (redirect_string)
 
-@app.route('/sitemap.xml', methods=['GET'])
+@app.route('/sitemap.xml')
 def SiteMap():
-    xml = render_template('sitemap.xml')
-    return Response(xml, mimetype='text/xml')
+    
+    return render_template('sitemap.xml', methods=['GET'])
 	
 if __name__ == '__main__':
     #app.run(debug=True, host='0.0.0.0', port=33507)

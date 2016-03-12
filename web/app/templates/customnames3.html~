@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>{{ user_word + " " }}Names - Name Generator</title>
+  <title>{{ user_word + " " }}Names</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<meta name="description" content="Generate business names with custom words and full sentences. Name Amigo generates great names for your project or business." />
-
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">

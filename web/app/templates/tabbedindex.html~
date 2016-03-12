@@ -1,8 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Name Amigo</title>
+  <title>Name Amigo - Business Name Generator</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1></meta>
+
+  <meta name="description" content="Generate business names and project names with name generator. Name Amigo works with full setences or categories to generate high quality business names." />
+  
   <!--COMMNENT: to not load a favicon-->
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -31,7 +34,7 @@
 
 <div data-role="main" class="ui-content">
     <form method="get" action="/CustomWords">
-        <input type="text" name="words" id="words" required="true" placeholder="Describe:">
+        <input type="text" name="words" id="words" required="true" placeholder="Enter your words/setences:">
         <!--<textarea name="words" id="words" placeholder="Describe:" required="true"></textarea>-->
         <input type="submit" value="Submit">
     </form>

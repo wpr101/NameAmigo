@@ -23,7 +23,7 @@ def clean_words(user_word):
     return (word_list)
 
 def create_redirect_string(word_list):	
-    redirect_string = '/custom-words/'
+    redirect_string = '/CustomWords/'
     for i in range(len(word_list)):
         redirect_string += word_list[i] 
         redirect_string += "-"
