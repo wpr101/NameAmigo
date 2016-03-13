@@ -58,10 +58,10 @@ def SentimentAnalysis():
 
     tfidf = TfidfTransformer()
     np.set_printoptions(precision=2)
-    print(tfidf.fit_transform(count.fit_transform(docs)).toarray())
+    tfidf_array = tfidf.fit_transform(count.fit_transform(docs)).toarray()
 
     return render_template ('sentiment-analysis.html', word_list=word_list,
-    			    word_map=word_map, bag_array = bag.toarray())
+    			    word_map=word_map, bag_array = bag_array, tfidf_array=tfidf_array)
     
 
 @app.route('/sitemap.xml', methods=['GET'])
