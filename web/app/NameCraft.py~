@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, Response
 import os
+import numpy as np
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 
 import ChooseWord as cw
 import CustomNames as cn
@@ -37,6 +39,30 @@ def CustomWords():
     redirect_string = pw.create_redirect_string(word_list)
 	
     return redirect (redirect_string)
+
+@app.route('/sentiment', methods=['GET'])
+def Sentiment():
+
+    return render_template ('sentiment.html')
+
+@app.route('/sentiment-analysis', methods=['POST'])
+def SentimentAnalysis():
+
+    user_word = request.form['words']
+    word_list = user_word.split()
+    count = CountVectorizer()
+    docs = np.array([user_word])
+    bag = count.fit_transform(docs)
+    word_map = count.vocabulary_
+    bag_array = bag.toarray()
+
+    tfidf = TfidfTransformer()
+    np.set_printoptions(precision=2)
+    print(tfidf.fit_transform(count.fit_transform(docs)).toarray())
+
+    return render_template ('sentiment-analysis.html', word_list=word_list,
+    			    word_map=word_map, bag_array = bag.toarray())
+    
 
 @app.route('/sitemap.xml', methods=['GET'])
 def SiteMap():
