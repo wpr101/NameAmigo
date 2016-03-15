@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, Response
 import os
-#import numpy as np
-#from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+import numpy as np
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 
 import ChooseWord as cw
 import CustomNames as cn
@@ -40,28 +40,28 @@ def CustomWords():
 	
     return redirect (redirect_string)
 
-#@app.route('/sentiment', methods=['GET'])
-#def Sentiment():
+@app.route('/sentiment', methods=['GET'])
+def Sentiment():
 
-    #return render_template ('sentiment.html')
+    return render_template ('sentiment.html')
 
-#@app.route('/sentiment-analysis', methods=['POST'])
-#def SentimentAnalysis():
+@app.route('/sentiment-analysis', methods=['POST'])
+def SentimentAnalysis():
 
-    #user_word = request.form['words']
-    #word_list = user_word.split()
-    #count = CountVectorizer()
-    #docs = np.array([user_word])
-    #bag = count.fit_transform(docs)
-    #word_map = count.vocabulary_
-    #bag_array = bag.toarray()
+    user_word = request.form['words']
+    word_list = user_word.split()
+    count = CountVectorizer()
+    docs = np.array([user_word])
+    bag = count.fit_transform(docs)
+    word_map = count.vocabulary_
+    bag_array = bag.toarray()
 
-    #tfidf = TfidfTransformer()
-    #np.set_printoptions(precision=2)
-    #tfidf_array = tfidf.fit_transform(count.fit_transform(docs)).toarray()
+    tfidf = TfidfTransformer()
+    np.set_printoptions(precision=2)
+    tfidf_array = tfidf.fit_transform(count.fit_transform(docs)).toarray()
 
-    #return render_template ('sentiment-analysis.html', word_list=word_list,
-    			    #word_map=word_map, bag_array = bag_array, tfidf_array=tfidf_array)
+    return render_template ('sentiment-analysis.html', word_list=word_list,
+    			    word_map=word_map, bag_array = bag_array, tfidf_array=tfidf_array)
     
 
 @app.route('/sitemap.xml', methods=['GET'])
