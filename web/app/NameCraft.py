@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, Response
 import os
+from gevent.pywsgi import WSGIServer
 
 import ChooseWord as cw
 import CustomNames as cn
@@ -46,4 +47,5 @@ def SiteMap():
 if __name__ == '__main__':
     #app.run(debug=True, host='0.0.0.0', port=33507)
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    #app.run(host='0.0.0.0', port=port)
+    WSGIServer(('', port), app).serve_forever()
