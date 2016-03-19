@@ -119,12 +119,8 @@ Category
 Ginger
 Upload
 Download
-Fatal
-Error
 Tool
-Tools
 Method
-Methods
 Login
 Cost
 Costs
@@ -635,13 +631,11 @@ Serenity
 Gardens
 Precision
 Seed
-Bowl
 Seeds
 Nothern
 Holo
 Redeem
 Protect
-Protects
 Reach
 Hologram
 Southern

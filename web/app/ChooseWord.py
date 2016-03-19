@@ -115,7 +115,7 @@ def create_thesaurus_name():
     random_list = []
     for i in range(ENTRIES):
         random_name = ""
-        random_name = random.choice(words) + random.choice(words)
+        random_name = random.choice(words) +  random.choice(words)
         random_list.append(random_name)
     describe_projects.update({"Random":random_list})
 
