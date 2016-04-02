@@ -506,7 +506,6 @@ Supreme
 Sly
 Revive
 Kink
-Kinks
 Software
 Funk
 Young
@@ -517,7 +516,6 @@ Talk
 Talking
 Vertigo
 Stage
-Stages
 Grateful
 Noon
 Rear
@@ -525,7 +523,6 @@ Taxi
 Dandy
 Bounty
 Height
-Heights
 Falcon
 Pulp
 Dance
@@ -556,7 +553,6 @@ Forrest
 Citizen
 Wizard
 Season
-Seasons
 Rooted
 Genus
 Add
@@ -643,7 +639,6 @@ Cup
 Cups
 Link
 Linked
-Links
 Career
 Ray
 Comfort
@@ -661,9 +656,7 @@ Polar
 Wad
 Ward
 Pic
-Pics
 Picture
-Pictures
 Blink
 Pixie
 Pix
@@ -671,7 +664,6 @@ Bless
 Glass
 Stim
 Paint
-Paints
 Guard
 Tumble
 Smash
@@ -723,7 +715,6 @@ Feral
 Heal
 Thunder
 Tail
-Tails
 Grasp
 Hunger
 Rising
@@ -778,7 +769,6 @@ Carrot
 Sentry
 Raise
 Fortune
-Numbers
 Modest
 Mouse
 Target
@@ -827,8 +817,6 @@ Funding
 Rent
 Domain
 Title
-Fail
-Fails
 Limit
 Unlimited
 Limits
@@ -873,7 +861,6 @@ Select
 Help
 Consider
 Partner
-Partners
 Royal
 Estate
 Choice
@@ -922,15 +909,12 @@ Pockets
 Jack
 Jacks
 Nest
-Nests
-Nestings
 Zap
 Jet
 Jets
 Spree
 Swipe
 Option
-Options
 Jolt
 Wipe
 Mates
@@ -945,7 +929,6 @@ Flames
 Risky
 Strategy
 Rich
-Riches
 Wire
 Wires
 Save
