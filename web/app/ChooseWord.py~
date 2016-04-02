@@ -109,13 +109,13 @@ thesaurus.update({'Home':['Home']})
 def create_thesaurus_name():
     ENTRIES = 100
     describe_projects = {}
-    words = rt.read_text('txt/words.txt')
+    words = rt.read_text('txt/5starwords.txt')
 
     #Add random as a thesaurus mapping
     random_list = []
     for i in range(ENTRIES):
         random_name = ""
-        random_name = random.choice(words) + "-" +  random.choice(words)
+        random_name = random.choice(words) +  random.choice(words)
         random_list.append(random_name)
     describe_projects.update({"Random":random_list})
 
