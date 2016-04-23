@@ -5,6 +5,7 @@ from gevent.pywsgi import WSGIServer
 import ChooseWord as cw
 import CustomNames as cn
 import PrepareWords as pw
+import VowelPatterns as vp
 
 app = Flask(__name__)
 
@@ -38,6 +39,15 @@ def CustomWords():
     redirect_string = pw.create_redirect_string(word_list)
 	
     return redirect (redirect_string)
+
+@app.route('/patterns', methods=['GET'])
+def Patterns():
+    pattern_list = vp.generate_patterns()
+
+    return render_template('patterns.html',
+                           pattern_list = pattern_list)
+    
+
 
 @app.route('/sitemap.xml', methods=['GET'])
 def SiteMap():
