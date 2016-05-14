@@ -11,6 +11,7 @@ def pattern_cvcv():
     letter_three = random.choice(CONSONANTS)
     letter_four = random.choice(VOWELS)
     name = letter_one + letter_two + letter_three + letter_four
+
     return(name)
 
 def generate_patterns():

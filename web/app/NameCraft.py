@@ -6,6 +6,7 @@ import ChooseWord as cw
 import CustomNames as cn
 import PrepareWords as pw
 import VowelPatterns as vp
+import Trump as t
 
 app = Flask(__name__)
 
@@ -46,8 +47,15 @@ def Patterns():
 
     return render_template('patterns.html',
                            pattern_list = pattern_list)
-    
 
+@app.route('/trump', methods=['GET'])
+def Trump():
+	name_list = t.create_names()
+	print(name_list)
+	
+	return render_template('trump.html',
+                           name_list = name_list)
+    
 
 @app.route('/sitemap.xml', methods=['GET'])
 def SiteMap():
