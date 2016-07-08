@@ -7,9 +7,11 @@ import CustomNames as cn
 import PrepareWords as pw
 import VowelPatterns as vp
 import Trump as t
+import Electrum as e
 
 app = Flask(__name__)
 
+#homepage
 @app.route('/')
 def index():
     
@@ -41,6 +43,7 @@ def CustomWords():
 	
     return redirect (redirect_string)
 
+#4 letter words fitting the CVCV pattern, where C=consonant, V=vowel
 @app.route('/patterns', methods=['GET'])
 def Patterns():
     pattern_list = vp.generate_patterns()
@@ -48,15 +51,23 @@ def Patterns():
     return render_template('patterns.html',
                            pattern_list = pattern_list)
 
+#trump spokesman name generator
 @app.route('/trump', methods=['GET'])
 def Trump():
 	name_list = t.create_names()
-	print(name_list)
 	
 	return render_template('trump.html',
                            name_list = name_list)
-    
 
+#electrum wallet seed generator
+@app.route('/electrum', methods=['GET'])
+def Electrum():
+	seeds_list = e.create_names()
+	
+	return render_template('electrum.html',
+                           seeds_list = seeds_list)
+    
+#sitemap path for google to find the sitemap
 @app.route('/sitemap.xml', methods=['GET'])
 def SiteMap():
     xml = render_template('sitemap.xml')
