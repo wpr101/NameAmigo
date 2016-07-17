@@ -8,6 +8,7 @@ import PrepareWords as pw
 import VowelPatterns as vp
 import Trump as t
 import Electrum as e
+import Pokemon as poke
 
 app = Flask(__name__)
 
@@ -65,6 +66,14 @@ def Electrum():
 	seeds_list = e.create_names()
 	
 	return render_template('electrum.html',
+                           seeds_list = seeds_list)
+
+#electrum wallet seed generator
+@app.route('/pokemon', methods=['GET'])
+def Pokemon():
+	seeds_list = poke.create_names()
+	
+	return render_template('pokemon.html',
                            seeds_list = seeds_list)
     
 #sitemap path for google to find the sitemap
