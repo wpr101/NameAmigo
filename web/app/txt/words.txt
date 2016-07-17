@@ -1939,7 +1939,6 @@ Sales
 Force
 Green
 Great
-Greatest
 Super
 Best
 Coffee
@@ -1985,7 +1984,6 @@ Dealer
 New
 Tradition
 Store
-Stores
 Well
 Honey
 Spirit
@@ -1998,7 +1996,6 @@ Health
 Lob
 Critical
 Web
-Webs
 Service
 Block
 Lock
@@ -2051,7 +2048,6 @@ Playing
 Marks
 Mark
 Ark
-Changes
 Man
 God
 Gods
@@ -2076,7 +2072,6 @@ Light
 Lighter
 Slim
 Flower
-Flowers
 Lush
 Nation
 Entrusted
@@ -2100,20 +2095,16 @@ Snow
 Mountain
 Nothing
 Question
-Questions
 Answer
-Answers
 Quality
 Val
 Value
-Values
 Convenience
 Three
 Star
 Sis
 Opera
 Reward
-Rewards
 Stars
 Bullion
 Galaxy
@@ -2135,14 +2126,12 @@ Vision
 Exquisite
 Ton
 Second
-Seconds
 Nut
 Nuts
 Minute
 Minutes
 Min
 Hour
-Hours
 Success
 Graphics
 Silicon
@@ -2160,12 +2149,10 @@ Notes
 Work
 Works
 Bell
-Bells
 Hold
 Group
 Transport
 Sports
-Sporting
 Speed
 Endurance
 Eight
@@ -2188,7 +2175,6 @@ Shares
 Share
 Giraffe
 Brother
-Brothers
 Many
 Much
 Believe
@@ -2232,13 +2218,11 @@ Coding
 Ninja
 Tops
 Top
-Highest
 Higher
 Last
 Lasting
 Blast
 Other
-Others
 Human
 Humanity
 State
@@ -2259,8 +2243,6 @@ Joy
 Joyful
 English
 Roll
-Rolled
-Rolling
 Rolls
 Latin
 Greek
@@ -2296,10 +2278,7 @@ Saga
 Reed
 Organ
 Bug
-Sleeps
-Sleeping
 Sleep
-Powers
 Power
 Version
 Transform
@@ -2312,7 +2291,6 @@ Begin
 Echo
 Prompt
 Room
-Rooms
 Hard
 Vapor
 Smoke
@@ -2366,8 +2344,6 @@ Kindle
 Period
 Device
 List
-Lists
-Listing
 Home
 Credits
 Cred
@@ -2414,7 +2390,6 @@ Concurrent
 Pragmatic
 Free
 Act
-Acting
 Action
 Game
 Gaming
