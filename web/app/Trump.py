@@ -11,7 +11,6 @@ def create_names():
 
 	for i in range(NUM_NAMES):
 		name = random.choice(first_names) + " " + random.choice(last_names)
-		print("name is: ", name)
 		name_list.append(name)
 
 
