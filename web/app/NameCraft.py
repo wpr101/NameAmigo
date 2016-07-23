@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, Response
-import os
 from gevent.pywsgi import WSGIServer
+from __init__ import redis
+import os
 
 import ChooseWord as cw
 import CustomNames as cn
@@ -75,6 +76,13 @@ def Pokemon():
 	
 	return render_template('pokemon.html',
                            seeds_list = seeds_list)
+
+@app.route('/pokemon/<key>/<value>')
+def PokemonID(key, value):
+	redis.set(key, value)
+
+	return render_template('test.html')
+	
     
 #sitemap path for google to find the sitemap
 @app.route('/sitemap.xml', methods=['GET'])
