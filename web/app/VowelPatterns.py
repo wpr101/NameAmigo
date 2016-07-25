@@ -3,7 +3,7 @@ import random
 VOWELS = ("a", "e", "i", "o", "u")
 CONSONANTS = ("b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q",
               "r", "s", "t", "v", "w", "x", "y", "z")
-ENTRIES = 100
+ENTRIES = 25
 
 def pattern_cvcv():
     letter_one = random.choice(CONSONANTS).upper()

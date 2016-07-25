@@ -16,5 +16,6 @@ a = m.Mnemonic(None)
 #print(seed.encode('hex'))
 
 
-print(a.make_seed())
-	
+seed = a.make_seed()
+
+self.assertTrue(m.check_seed(seed, custom_entropy=1))
