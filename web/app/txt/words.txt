@@ -1012,19 +1012,13 @@ Tind
 Tinder
 Follow
 Make
-Thinks
 Think
 Thinker
-Thinking
 Writer
 Maker
-Makes
-Making
 Date
 Location
-Tracks
 Track
-Tracking
 Dating
 Taking
 Gag
@@ -1135,7 +1129,6 @@ Different
 Watch
 First
 Impress
-Impressed
 Impression
 Amazing
 Impressions
@@ -1510,7 +1503,6 @@ Feather
 Solar
 Shadow
 Starting
-Neu
 Boost
 Booster
 Boosting
@@ -1631,7 +1623,6 @@ Ask
 Hilarious
 Perks
 Park
-Parking
 Parks
 Recreation
 Creation
@@ -1889,7 +1880,6 @@ Tough
 Vigor
 Vigorous
 Might
-Rugged
 Fast
 Agile
 Brisk
@@ -1953,7 +1943,6 @@ Son
 Geo
 Face
 Faces
-Facing
 Air
 Seven
 Five
@@ -2045,7 +2034,6 @@ Trust
 Cofidence
 Worth
 Playing
-Marks
 Mark
 Ark
 Man
@@ -2069,7 +2057,6 @@ Born
 Box
 Heavy
 Light
-Lighter
 Slim
 Flower
 Lush
@@ -2324,7 +2311,6 @@ Street
 Dreams
 Form
 Forms
-Forming
 Dream
 Dreamer
 Book
