@@ -10,6 +10,7 @@ import VowelPatterns as vp
 import Trump as t
 import Electrum as e
 import Pokemon as poke
+import PoetryRobertFrost as prf
 
 app = Flask(__name__)
 
@@ -67,7 +68,7 @@ def Electrum():
 	return render_template('electrum.html',
                            seeds_list = seeds_list)
 
-#electrum wallet seed generator
+#pokemon name generator
 @app.route('/pokemon', methods=['GET'])
 def Pokemon():
 	seeds_list = poke.create_names()
@@ -75,11 +76,21 @@ def Pokemon():
 	return render_template('pokemon.html',
                            seeds_list = seeds_list)
 
+#robert frost poem generator
+@app.route('/robert-frost-poetry', methods=['GET'])
+def PoetryRobertFrost():
+	seeds_list = prf.create_names()
+
+	return render_template('poetryrobertfrost.html',
+                           seeds_list = seeds_list)
+    
+'''
 @app.route('/pokemon/<key>/<value>')
 def PokemonID(key, value):
 	redis.set(key, value)
 
 	return render_template('test.html')
+'''
 
 #sitemap path for google to find the sitemap
 @app.route('/sitemap.xml', methods=['GET'])
